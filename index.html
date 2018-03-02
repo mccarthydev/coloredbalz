@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Colored Balz</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="icon.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+    body{
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    h1{
+      font-weight:100;
+      text-align:center;
+      margin-top: 50px;
+    }
+
+    p{
+      text-align: center;
+      margin-top:100px;
+    }
+
+    #botao{
+      padding: 15px 80px;
+      background-color: #4d94ff;
+      margin-top: 150px;
+      border:none;
+      font-size:20px;
+      color:#fff;
+      font-family: 'Roboto Mono', monospace;
+      transition: all 0.2s;
+    }
+
+    #botao:hover{
+      opacity:0.5;
+    }
+
+    #score{
+      font-size:20px;
+    }
+
+    #containerJogo div{
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      display: inline-block;
+      border-radius:50%;
+      margin-top:200px;
+    }
+
+    #containerJogoConfirma{
+      display:none;
+    }
+
+    #textoAcerto{
+      margin-top:100px;
+    }
+
+    #circulosConfirma div{
+      height: 100px;
+      width: 100px;
+      background-color: #ccc;
+      margin: 10px;
+      display: inline-block;
+      border-radius:50%;
+      margin-top:100px;
+      transition: all 0.2s;
+    }
+
+    #botaoValidar{
+      padding: 15px 80px;
+      background-color: #4d94ff;
+      margin-top: 50px;
+      border:none;
+      font-size:20px;
+      color:#fff;
+      font-family: 'Roboto Mono', monospace;
+      transition: all 0.2s;
+    }
+
+    #botaoValidar:hover{
+      opacity:0.5;
+    }
+
+    #botaoReiniciar{
+      padding: 15px 80px;
+      background-color: #4d94ff;
+      margin-top: 10px;
+      border:none;
+      font-size:20px;
+      color:#fff;
+      font-family: 'Roboto Mono', monospace;
+      display:none;
+      transition: all 0.2s;
+    }
+
+    #botaoReiniciar:hover{
+      opacity:0.5;
+    }
+
+    #botaoProsseguir{
+      padding: 15px 80px;
+      background-color: #4d94ff;
+      margin-top: 10px;
+      border:none;
+      font-size:20px;
+      color:#fff;
+      font-family: 'Roboto Mono', monospace;
+      display:none;
+      transition: all 0.2s;
+    }
+
+    #botaoProsseguir:hover{
+      opacity:0.5;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div id="score"></div>
+
+  <div id="container">
+  <h1 id="titulo">Colored Balz</h1>
+  <p id="texto">Decore a ordem das cores para ganhar o jogo! Você tem apenas 5 segundos! Clique em "Começar" para dar início!</p>
+
+  <center><button href="" id="botao" onclick="coloredBalls()">Começar</button></center>
+  </div>
+
+  <center><div id="containerJogo"></div></center>
+
+  <center><div id="containerJogoConfirma">
+    <div id='textoAcerto'></div>
+    <div id="circulosConfirma"></div>
+    <div id="botoes">
+    <button href="" id="botaoValidar">Verificar</button>
+    <button href="" id="botaoProsseguir" onclick="prosseguir()">Continuar</button>
+    <button href="" id="botaoReiniciar" onclick="reiniciar()">Reiniciar</button>
+    </div>
+  </div></center>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
