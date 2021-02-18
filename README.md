@@ -1,3 +1,3 @@
-#ColoredBalz
+# ColoredBalz
 
-A color remembering game with some simples javascript
+A color remembering game with some simple javascript.
