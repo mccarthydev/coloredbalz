@@ -8,8 +8,6 @@ function tituloCor(){
 var trocaCores = setInterval(tituloCor, 1000);
 //Troca de Cor Título
 
-localStorage.setItem("highScore", highScore);
-
 var score = 0; //score do jogo
 
 //Inicio Jogo
@@ -148,9 +146,9 @@ function coloredBalls() {
 
         textoAcerto.innerHTML = 'Acertou!';
         document.querySelector('#botaoProsseguir').style.display = 'block';
-
+        
         score++
-        document.querySelector('#score').innerHTML = "score: "+score;
+        document.querySelector('#score').innerHTML = "score: "+ score.toString();
 
       }else{
         textoAcerto.innerHTML = 'Errou!';
